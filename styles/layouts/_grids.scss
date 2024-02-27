@@ -33,7 +33,7 @@ $lg-margin: 4%;
     padding: 0 $md-margin;
 
     @for $i from 1 through $md-columns {
-      .col-sm-#{$i} {
+      .col-md-#{$i} {
         width: percentage($i / $md-columns);
       }
     }
@@ -43,7 +43,7 @@ $lg-margin: 4%;
     padding: 0 $lg-margin;
 
     @for $i from 1 through $lg-columns {
-      .col-sm-#{$i} {
+      .col-lg-#{$i} {
         width: percentage($i / $lg-columns);
       }
     }
