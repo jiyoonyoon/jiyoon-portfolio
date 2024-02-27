@@ -3,11 +3,9 @@ $gutter: 10px;
 $sm-columns: 4;
 $sm-margin: 10px;
 
-$md-breakpoint: 768px;
 $md-columns: 12;
 $md-margin: 35px;
 
-$lg-breakpoint: 1300px;
 $lg-columns: 12;
 $lg-margin: 4%;
 
@@ -31,7 +29,7 @@ $lg-margin: 4%;
     }
   }
 
-  @media screen and (min-width: $md-breakpoint) {
+  @include responsive(T) {
     padding: 0 $md-margin;
 
     @for $i from 1 through $md-columns {
@@ -41,7 +39,7 @@ $lg-margin: 4%;
     }
   }
 
-  @media screen and (min-width: $lg-breakpoint) {
+  @include responsive(D) {
     padding: 0 $lg-margin;
 
     @for $i from 1 through $lg-columns {
