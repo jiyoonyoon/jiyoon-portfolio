@@ -14,7 +14,7 @@
 
       h1 {
         @include text-style(16, $black);
-        font-weight: 600;
+        font-weight: 500;
       }
     }
   }
@@ -23,14 +23,6 @@
     height: 50px;
     position: relative;
     width: 50px;
-
-    &:hover {
-      .gnb-menu-button span {
-        &:nth-child(2) {
-          background-color: $blue;
-        }
-      }
-    }
 
     .gnb-menu-button {
       @include pos-center;
@@ -51,32 +43,61 @@
           margin-top: 4px;
         }
       }
+    }
 
-      &.is-active {
-        span {
-          transition: 0.25s margin, 0.25s transform 0.25s;
+    &.is-active .gnb-menu-button {
+      span {
+        transition: 0.25s margin, 0.25s transform 0.25s;
 
-          &:nth-child(1) {
-            margin-bottom: -2px;
-            margin-top: 4px;
-            transform: rotate(45deg);
-          }
+        &:nth-child(1) {
+          margin-bottom: -2px;
+          margin-top: 4px;
+          transform: rotate(45deg);
+        }
 
-          &:nth-child(2) {
-            transform: rotate(45deg);
-          }
+        &:nth-child(2) {
+          transform: rotate(45deg);
+        }
 
-          &:nth-child(3) {
-            height: 3px;
-            margin-top: -2px;
-            transform: rotate(135deg);
-          }
+        &:nth-child(3) {
+          height: 3px;
+          margin-top: -2px;
+          transform: rotate(135deg);
+        }
+      }
+    }
+
+    &:active .gnb-menu-button {
+      span {
+        &:nth-child(2) {
+          background-color: $blue;
         }
       }
     }
   }
 
   @include responsive(T) {
+    border-bottom: 0;
+
+    &-wrapper {
+      height: 90px;
+    }
+
+    &-center {
+      @include pos-center;
+      @include flexbox(between);
+      width: 40%;
+
+      .dots {
+        @include dot(6px);
+      }
+
+      .change-text {
+        @include text-style(16, $black);
+        font-weight: 400;
+      }
+    }
+
     &-right {
       .gnb-menu-button {
         span {
@@ -91,18 +112,50 @@
             margin-top: 6px;
           }
         }
+      }
 
-        &.is-active {
-          span {
-            &:nth-child(1) {
-              margin-bottom: -3px;
-              margin-top: 6px;
-            }
+      &.is-active .gnb-menu-button {
+        span {
+          &:nth-child(1) {
+            margin-bottom: -3px;
+            margin-top: 6px;
+          }
 
-            &:nth-child(3) {
-              height: 4px;
-              margin-top: -3px;
-            }
+          &:nth-child(3) {
+            height: 4px;
+            margin-top: -3px;
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(D) {
+    &-wrapper {
+      height: 110px;
+    }
+
+    &-left {
+      .logo h1 {
+        @include text-style(18);
+      }
+    }
+
+    &-center {
+      .dots {
+        @include dot(7px);
+      }
+
+      .change-text {
+        @include text-style(18);
+      }
+    }
+
+    &-right .gnb-menu-button {
+      &:hover {
+        span {
+          &:nth-child(2) {
+            background-color: $blue;
           }
         }
       }
