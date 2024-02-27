@@ -1,0 +1,65 @@
+%btn-base {
+  @include flexbox;
+  height: 46px;
+  padding: 0 6px;
+  position: relative;
+
+  strong {
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    transition: color 200ms ease-in-out;
+
+    &::before {
+      background-color: $primary;
+      content: '';
+      display: block;
+      height: 1px;
+      left: 0;
+      position: absolute;
+      top: 100%;
+      transition: background-color 200ms ease-in-out;
+      width: 100%;
+    }
+  }
+
+  i {
+    padding-left: 2px;
+    transition: color 200ms ease-in-out;
+  }
+
+  &:hover {
+    strong {
+      color: $blue;
+
+      &::before {
+        background-color: $blue;
+      }
+    }
+
+    i {
+      color: $blue;
+    }
+  }
+}
+
+.btn-18 {
+  @extend %btn-base;
+
+  strong {
+    @include text-style(18, $primary);
+  }
+
+  i {
+    font-size: 26px;
+  }
+}
+
+.btn-16 {
+  @extend %btn-base;
+  @include text-style(16, $primary);
+
+  i {
+    font-size: 24px;
+  }
+}
