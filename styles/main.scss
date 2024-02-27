@@ -1,6 +1,8 @@
 @import './constants/colors';
 @import './constants/typography';
 @import './constants/breakpoints';
+@import './constants/z-indexes';
+@import './constants/dimenstions';
 
 @import './bass/fonts';
 @import './bass/normalize';
@@ -18,3 +20,5 @@
 
 @import './layouts/grids';
 @import './layouts/gnb';
+@import './layouts/sidebar';
+@import './layouts/overlay';

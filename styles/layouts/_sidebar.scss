@@ -1,0 +1,106 @@
+.sidebar {
+  background-color: $white;
+  height: 100vh;
+  max-width: 500px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 350ms ease-in-out;
+  width: 80%;
+  z-index: $sidebar-level;
+
+  &.is-active {
+    transform: translate3d(0, 0, 0);
+  }
+
+  &-header {
+    height: 70px;
+  }
+
+  &-nav {
+    @include column-flexbox(between, start);
+    height: calc(100vh - 71px);
+  }
+
+  &-menu,
+  &-social {
+    padding: 32px 20px;
+    width: 100%;
+  }
+
+  &-menu {
+    &-item {
+      @include flexbox(start);
+      cursor: pointer;
+      height: 60px;
+
+      button {
+        @include text-style(24, $primary);
+        display: block;
+        transition: color 200ms ease-in-out;
+      }
+
+      &:active button {
+        color: $blue;
+      }
+    }
+  }
+
+  &-social {
+    &-item {
+      @include flexbox(start);
+      height: 40px;
+
+      address {
+        @include text-style(18, $primary);
+        display: block;
+        transition: opacity 200ms ease-in-out;
+      }
+
+      &:active address {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  @include responsive(T) {
+    &-header {
+      height: 90px;
+    }
+
+    &-nav {
+      height: calc(100vh - 91px);
+    }
+
+    &-menu .sidebar-menu-item {
+      height: 80px;
+
+      button {
+        @include text-style(36);
+      }
+    }
+  }
+
+  @include responsive(D) {
+    &-header {
+      height: 110px;
+    }
+
+    &-nav {
+      height: calc(100vh - 111px);
+    }
+
+    &-menu .sidebar-menu-item {
+      &:hover button {
+        color: $blue;
+      }
+    }
+
+    &-social .sidebar-social-item {
+      address:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

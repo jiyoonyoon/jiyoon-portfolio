@@ -1,0 +1,15 @@
+.overlay {
+  background-color: rgba($primary, 0.5);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: $overlay-level;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 300ms ease-in-out;
+  width: 100%;
+
+  &.is-open {
+    transform: translate3d(0, 0, 0);
+  }
+}

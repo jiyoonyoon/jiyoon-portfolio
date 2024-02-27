@@ -1,6 +1,7 @@
 .gnb {
   border-bottom: 1px dashed $black;
   position: relative;
+  z-index: $gnb-level;
 
   &-wrapper {
     @include flexbox(between);
