@@ -2,6 +2,7 @@
 @import './constants/typography';
 @import './constants/breakpoints';
 @import './constants/z-indexes';
+@import './constants/grids';
 @import './constants/dimenstions';
 
 @import './bass/fonts';
@@ -17,6 +18,9 @@
 
 @import './modules/buttons';
 @import './modules/icons';
+
+@import './components/main-visual';
+@import './components/about-me';
 
 @import './layouts/grids';
 @import './layouts/gnb';
