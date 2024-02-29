@@ -91,8 +91,6 @@
     }
 
     &-text-wrapper {
-      padding-top: 40px;
-
       .text {
         h3,
         p {
@@ -130,7 +128,9 @@
     }
 
     &-text-wrapper {
-      padding-top: 90px;
+      @include column-flexbox(center, start);
+      height: 80vh;
+      padding-top: 0px;
 
       h2 {
         @include text-style(36, $blue);
