@@ -1,7 +1,9 @@
 .global-footer {
   bottom: 36px;
   left: 0;
+  opacity: 0;
   position: fixed;
+  visibility: hidden;
   width: 100%;
 
   &-list {

@@ -1,6 +1,9 @@
 .gnb {
   border-bottom: 1px dashed $black;
-  position: relative;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: $gnb-level;
 
   &-wrapper {

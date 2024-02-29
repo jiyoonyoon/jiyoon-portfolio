@@ -40,6 +40,12 @@
   line-height: $line-height-60;
 }
 
+@mixin text-style-80() {
+  font-size: $font-size-80;
+  letter-spacing: $letter-spacing-80;
+  line-height: $line-height-80;
+}
+
 @mixin text-style($size, $color: false) {
   @if ($size == 14) {
     @include text-style-14;
@@ -61,6 +67,9 @@
   }
   @if ($size == 60) {
     @include text-style-60;
+  }
+  @if ($size == 80) {
+    @include text-style-80;
   }
 
   @if (type-of($color) == color) {
