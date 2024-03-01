@@ -1,0 +1,31 @@
+.project {
+  margin-bottom: 80px;
+  padding-top: 30px;
+  position: relative;
+
+  &::before {
+    background-color: $background-blue;
+    content: '';
+    display: block;
+    height: 40vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  @include responsive(T) {
+    &::before {
+      height: 60vh;
+    }
+  }
+
+  @include responsive(D) {
+    padding-top: 120px;
+    margin-bottom: 120px;
+
+    &::before {
+      height: 394px;
+    }
+  }
+}

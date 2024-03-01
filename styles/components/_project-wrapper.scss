@@ -1,0 +1,229 @@
+.project-wrapper {
+  position: relative;
+
+  &-title {
+    h1 {
+      color: $white;
+      font-family: $font-point;
+      font-size: clamp(12vw, 18vw, 80px);
+      white-space: nowrap;
+    }
+
+    strong {
+      @include text-style(40, $blue);
+      font-family: $font-point;
+      position: relative;
+      top: -1em;
+    }
+  }
+
+  &-contents {
+    margin: 0 -#{$sm-grid-margin};
+    overflow: hidden;
+
+    &-item {
+      @include column-flexbox;
+
+      transform: scale(0.9);
+      transition: transform 300ms ease-in-out;
+
+      &.slick-active {
+        transform: scale(1);
+
+        figcaption {
+          opacity: 1;
+        }
+
+        .tiem {
+          opacity: 1;
+        }
+
+        figure {
+          filter: blur(0px);
+        }
+      }
+
+      .tiem {
+        @include text-style(14, $blue);
+        display: block;
+        margin-bottom: 8px;
+        opacity: 0;
+        text-align: center;
+        transition: opacity 300ms ease-in-out;
+      }
+
+      figure {
+        filter: blur(2px);
+        margin-bottom: 15px;
+        padding: 0 20px;
+        transition: filter 300ms ease-in-out;
+
+        a {
+          border-radius: 6px;
+          box-shadow: 4px 4px 15px $secondary;
+          display: block;
+          overflow: hidden;
+        }
+
+        img {
+          display: block;
+          height: auto;
+          width: 100%;
+        }
+      }
+
+      figcaption {
+        opacity: 0;
+        text-align: center;
+        transition: opacity 300ms ease-in-out;
+
+        .title {
+          @include text-style(24);
+          margin-bottom: 4px;
+        }
+
+        .skils {
+          @include flexbox;
+          margin-bottom: 30px;
+
+          li {
+            @include inline-flexbox;
+            @include text-style(14px);
+
+            &::after {
+              content: '∙';
+              padding: 0 6px;
+            }
+
+            &:last-child {
+              &::after {
+                content: '';
+                padding: 0px;
+              }
+            }
+          }
+        }
+
+        .text {
+          @include text-style(14);
+        }
+      }
+    }
+  }
+
+  &-thumbnail {
+    .thumbnail-list {
+      @include flexbox;
+    }
+  }
+
+  @include responsive(T) {
+    &-title {
+      h1 {
+        font-size: clamp(12vw, 18vw, 80px);
+      }
+
+      strong {
+        @include text-style(60);
+      }
+    }
+
+    &-contents {
+      margin: 0 -#{$md-grid-margin};
+
+      &-item {
+        width: 650px;
+
+        figure {
+          margin-bottom: 20px;
+        }
+
+        figcaption {
+          .text {
+            @include text-style(16);
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(D) {
+    &-title {
+      @include pos-center-y;
+      transform: translateY(-60%);
+
+      h1 {
+        font-size: clamp(7vw, 9vw, 80px);
+      }
+
+      strong {
+        @include text-style(60, $blue);
+        font-family: $font-point;
+        position: relative;
+        top: -1em;
+      }
+    }
+
+    &-contents {
+      margin: 0 $lg-grid-margin 0 0;
+      overflow: hidden;
+
+      .slick-list {
+        width: 60%;
+        float: right;
+      }
+
+      &-item {
+        &.slick-active {
+          transform: scale(1);
+
+          figcaption {
+            opacity: 1;
+          }
+
+          .tiem {
+            opacity: 1;
+          }
+
+          figure {
+            filter: blur(0px);
+          }
+        }
+
+        .tiem {
+          @include text-style(16, $blue);
+          margin-bottom: 15px;
+        }
+
+        figure {
+          margin-bottom: 30px;
+          padding: 0 20px;
+        }
+
+        figcaption {
+          opacity: 0;
+          text-align: center;
+          transition: opacity 300ms ease-in-out;
+
+          .title {
+            @include text-style(36);
+            margin-bottom: 12px;
+          }
+
+          .skils {
+            @include flexbox;
+            margin-bottom: 30px;
+
+            li {
+              @include text-style(16px);
+            }
+          }
+
+          .text {
+            @include text-style(18);
+          }
+        }
+      }
+    }
+  }
+}
