@@ -1,4 +1,5 @@
 $gutter: 10px;
+$gutter-half: 5px;
 
 $sm-columns: 4;
 $sm-margin: 10px;
@@ -11,4 +12,4 @@ $lg-margin: 4%;
 
 $sm-grid-margin: 15px;
 $md-grid-margin: 40px;
-$lg-grid-margin: calc(4% + 5px);
+$lg-grid-margin: calc(-#{$lg-margin} - 10px);
