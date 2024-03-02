@@ -15,6 +15,8 @@
   }
 
   @include responsive(T) {
+    margin-bottom: 180px;
+
     &::before {
       height: 60vh;
     }
@@ -22,7 +24,7 @@
 
   @include responsive(D) {
     padding-top: 120px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
 
     &::before {
       height: 381px;
