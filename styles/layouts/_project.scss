@@ -1,5 +1,5 @@
 .project {
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   padding-top: 30px;
   position: relative;
 
@@ -22,10 +22,10 @@
 
   @include responsive(D) {
     padding-top: 120px;
-    margin-bottom: 120px;
+    margin-bottom: 200px;
 
     &::before {
-      height: 394px;
+      height: 381px;
     }
   }
 }

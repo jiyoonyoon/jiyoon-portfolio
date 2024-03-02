@@ -111,12 +111,6 @@
     }
   }
 
-  &-thumbnail {
-    .thumbnail-list {
-      @include flexbox;
-    }
-  }
-
   @include responsive(T) {
     &-title {
       h1 {
