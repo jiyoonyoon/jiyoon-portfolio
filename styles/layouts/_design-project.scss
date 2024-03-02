@@ -1,0 +1,91 @@
+.design-project {
+  position: relative;
+  background-color: $background;
+  height: auto;
+  width: 100%;
+  padding-bottom: 120px;
+
+  &-title {
+    text-align: center;
+    position: relative;
+    top: -1em;
+
+    h1 {
+      color: $white;
+      font-family: $font-point;
+      font-size: clamp(12vw, 18vw, 80px);
+      white-space: nowrap;
+      line-height: 1;
+    }
+
+    strong {
+      @include text-style(40, $blue);
+      font-family: $font-point;
+      position: relative;
+    }
+  }
+
+  header {
+    @include column-flexbox;
+
+    .dots {
+      @include dot(6px);
+      margin-top: 12px;
+    }
+
+    .text {
+      margin-top: 40px;
+      p {
+        @include text-style(14);
+        text-align: center;
+        padding-bottom: 8px;
+
+        &:last-child {
+          padding-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    padding-bottom: 150px;
+
+    &-title {
+      top: -1.5em;
+
+      strong {
+        @include text-style(60);
+      }
+    }
+
+    header {
+      .text {
+        p {
+          @include text-style(16);
+        }
+      }
+    }
+  }
+
+  @include responsive(D) {
+    padding-bottom: 200px;
+
+    &-title {
+      h1 {
+        font-size: clamp(7vw, 9vw, 80px);
+      }
+    }
+
+    header {
+      .dots {
+        @include dot(7px);
+      }
+
+      .text {
+        p {
+          @include text-style(18);
+        }
+      }
+    }
+  }
+}
