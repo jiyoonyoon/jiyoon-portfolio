@@ -99,11 +99,6 @@
           @include text-style(16);
           padding-bottom: 12px;
         }
-
-        h3 {
-          color: $black;
-          font-weight: 500;
-        }
       }
 
       .btn-16 {
@@ -159,11 +154,6 @@
 
         P:last-child {
           padding-bottom: 0px;
-        }
-
-        h3 {
-          color: $black;
-          font-weight: 500;
         }
       }
 

@@ -39,6 +39,7 @@
       h3 {
         @include text-style(24);
         margin-bottom: 4px;
+        font-weight: 600;
       }
     }
 
@@ -102,6 +103,7 @@
           @include text-style(36);
           margin-top: 30px;
           margin-bottom: 15px;
+          white-space: nowrap;
         }
 
         p {
