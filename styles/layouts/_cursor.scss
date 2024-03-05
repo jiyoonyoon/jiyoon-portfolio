@@ -1,0 +1,73 @@
+@include responsive(T) {
+  body {
+    cursor: none !important;
+
+    a,
+    button {
+      cursor: none;
+    }
+  }
+
+  .cursor {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+    width: 56px;
+    height: 56px;
+    background: rgba($blue, 0.5);
+    box-shadow: 1px 1px 5px $secondary;
+    border-radius: 28px;
+    transform: translate(-50%, -50%);
+    transition: transform 300ms ease-in-out, width 300ms ease-in-out,
+      height 300ms ease-in-out, background-color 300ms ease-in-out;
+
+    &.cursor-link {
+      transform: translate(-50%, -50%) scale(1.2);
+      background: rgba($blue, 0.7);
+      width: 140px;
+
+      .cursor-text {
+        opacity: 1;
+        visibility: visible;
+        span {
+          color: $white;
+        }
+        i {
+          color: $white;
+        }
+      }
+    }
+
+    &.cursor-active {
+      width: 80px;
+      height: 80px;
+      background: rgba($blue, 0.3);
+      border-radius: 50%;
+    }
+
+    &.cursor-point {
+      width: 32px;
+      height: 32px;
+      background: rgba($blue, 0.8);
+    }
+
+    &-text {
+      @include flexbox;
+      opacity: 0;
+      visibility: hidden;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: opacity 350ms ease-in-out, visibility 350ms ease-in-out;
+
+      span {
+        @include text-style(16, $white);
+        white-space: nowrap;
+        vertical-align: middle;
+      }
+      i {
+        color: $white;
+      }
+    }
+  }
+}

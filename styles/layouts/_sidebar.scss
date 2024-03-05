@@ -32,7 +32,6 @@
   &-menu {
     &-item {
       @include flexbox(start);
-      cursor: pointer;
       height: 60px;
 
       button {
