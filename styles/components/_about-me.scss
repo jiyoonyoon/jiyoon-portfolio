@@ -1,32 +1,27 @@
 .about-me {
+  background-color: $background-blue;
+  margin-top: 10vh;
   padding-bottom: 80px;
   position: relative;
+  overflow: hidden;
   width: 100%;
 
-  &::before {
-    background-color: $background-blue;
-    content: '';
-    display: block;
-    height: calc(100% - (20vh - 8px));
-    left: 0;
-    position: absolute;
-    top: calc(20vh - 8px);
-    width: 100%;
-  }
-
   &-title {
-    @include flexbox(start, end);
-    height: 20vh;
+    position: absolute;
+    top: 30px;
+    z-index: 10;
 
     h1 {
-      @include text-style(40, $blue-right);
+      font-size: clamp(40px, 10vw, 80px);
+      color: $blue;
       font-family: $font-point;
     }
   }
 
   &-image-wrapper {
     @include column-flexbox;
-    position: relative;
+    position: static;
+    z-index: 0;
 
     figure {
       padding: 42px 45px 0 45px;
@@ -81,17 +76,6 @@
   }
 
   @include responsive(T) {
-    &::before {
-      height: calc(100% - (20vh - 12px));
-      top: calc(20vh - 12px);
-    }
-
-    &-title {
-      h1 {
-        @include text-style(60);
-      }
-    }
-
     &-text-wrapper {
       .text {
         h3,
@@ -111,15 +95,12 @@
     height: 100vh;
     padding-bottom: 0;
 
-    &::before {
-      height: calc(100% - (20vh - 15px));
-      top: calc(20vh - 15px);
-    }
-
     &-title {
+      right: 0;
       h1 {
         font-size: clamp(7vw, 9vw, 80px);
         line-height: 1;
+        color: $background-blue;
       }
     }
 
