@@ -16,6 +16,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -62,7 +65,469 @@
     </div>
   </header>
 
-  <footer class="global-footer">
+  <main class="contents">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-lg-12">
+          <div class="main-visual">
+            <ul class="main-visual-list sm-hidden">
+              <li class="main-visual-item">
+                <img src="./images/img-mainvisual01.jpg" alt="메인이미지1">
+              </li>
+              <li class="main-visual-item">
+                <img src="./images/img-mainvisual02.jpg" alt="메인이미지2">
+              </li>
+              <li class="main-visual-item">
+                <img src="./images/img-mainvisual03.jpg" alt="메인이미지3">
+              </li>
+            </ul>
+
+            <ul class="main-visual-list sm-only">
+              <li class="main-visual-item">
+                <img src="./images/img-mainvisual02-sm.jpg" alt="메인이미지2">
+              </li>
+            </ul>
+
+            <ol class=" main-visual-title-list">
+              <li class="main-visual-title-item reveal-up" data-delay="0.5">yes,</li>
+              <li class="main-visual-title-item reveal-up" data-delay="0.8">
+                of course
+              </li>
+              <li class="main-visual-title-item text-right  reveal-up" data-delay="1.1">No,</li>
+              <li class="main-visual-title-item text-right  reveal-up" data-delay="1.4">problem</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="about" class="about-me" role="tabpanel">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-12">
+          <div class="about-me-title reveal-up" data-delay="0.8">
+            <h1>Who is Jiyoon?</h1>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-sm-4 col-lg-4">
+          <div class="about-me-image-wrapper">
+            <figure class="text-fade" data-delay="0.2">
+              <img src="./images/img-about.jpg" alt="">
+              <figcaption class="visually-hidden">
+                ABOUT ME
+              </figcaption>
+            </figure>
+
+            <h2 class="lg-hidden">ABOUT ME</h2>
+
+            <div class="dots lg-hidden" aria-hidden>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+
+        <div class="col-sm-4 col-lg-5">
+          <div class="about-me-text-wrapper">
+            <h2 class="lg-only">ABOUT <span>ME</span></h2>
+
+            <div class="dots lg-only" aria-hidden>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="text text-fade" data-delay="0.5">
+              <h3>디지털 공간 중심에서 사람들과의 소통과 상호작을 이끌어내는 저를 소개합니다</h3>
+              <p>하고자 하는 일에 있어서는 끊임없이 도전하고직접 부딪혀보며 경험으로 성장하는 차지윤입니다.</p>
+              <p>제 손끝에서 하나하나 채워지는 웹사이트가 너무나 새롭고 흥미로워웹을 배워보자는 마음으로 웹에 대한 지식을 채워나갔습니다.</p>
+              <p>더 멋진 내일이 올 수 있도록 발전해 나가고 남들보다 한발 앞서 나가기 위해, 더 없이 성장하기 위해 끊임없이 노력하는 웹 퍼블리셔가 되겠습니다.</p>
+            </div>
+
+            <button class="btn-16 lg-hidden text-fade-left" type="button" data-delay="0">
+              <strong>More View</strong>
+              <i class="ic-right" aria-hidden></i>
+            </button>
+
+            <button class="btn-18 lg-only text-fade-left" type="button" data-delay="0.5">
+              <strong>More View</strong>
+              <i class="ic-right" aria-hidden></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="project" class="project" role="tabpanel">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-12">
+          <div class="project-wrapper">
+            <div class="project-wrapper-title">
+              <h1 class="reveal-up" data-delay="0">PROJECT</h1>
+              <strong class="text-fade-left" data-delay="0.8">
+                Responsive <br>
+                web site
+              </strong>
+            </div>
+            <div class="project-wrapper-contents text-fade" data-delay="0.5">
+              <ol class="project-wrapper-contents-list">
+                <li role="tabpanel" aria-labelledby="project-slider-tab-1" class="project-wrapper-contents-item">
+                  <span class="tiem" aria-label="2024년1월 - 2024년 2월">2024.Jan - 2024.Feb</span>
+                  <figure>
+                    <a href="/">
+                      <img src="./images/img-project01.jpg" alt="반응형 웹페이지 프로젝트-1">
+                    </a>
+                  </figure>
+                  <figcaption>
+                    <h3 class="title">
+                      Tomorrow-House <br>
+                      Web Responsive
+                    </h3>
+                    <ul class="skils">
+                      <li>Cross-browsing</li>
+                      <li>SCSS</li>
+                      <li>JavaScript</li>
+                    </ul>
+
+                    <p class="text">
+                      사용자가 입력 가능한 부분에는 여러 상황을 고려하여 UI가 무너지지 않도록 레이아웃을 탄탄하게 구성하여 SCSS를 활용하여 효율적인 코드를 작성하였습니다.
+                    </p>
+                  </figcaption>
+                </li>
+                <li role="tabpanel" aria-labelledby="project-slider-tab-2" class="project-wrapper-contents-item">
+                  <span class="tiem" aria-label="2023년4월 - 2024년 6월">2023.Apr - 2023.Jun</span>
+                  <figure>
+                    <a href="/">
+                      <img src="./images/img-project02.jpg" alt="반응형 웹페이지 프로젝트-2">
+                    </a>
+                  </figure>
+                  <figcaption>
+                    <h3 class="title">
+                      Portfolio <br>
+                      Web Responsive
+                    </h3>
+                    <ul class="skils">
+                      <li>JavaScript</li>
+                    </ul>
+
+                    <p class="text">
+                      해수욕장의 밝고 열정적인 분위기에 맞는 포인트 컬러와 파도의 웨이브로 인해 역동적이고 재미있는 작품을 만들어 보았습니다.
+                    </p>
+                  </figcaption>
+                </li>
+                <li role="tabpanel" aria-labelledby="project-slider-tab-3" class="project-wrapper-contents-item">
+                  <span class="tiem" aria-label="2023년2월 - 2023년 3월">2023.Feb - 2023.Mar</span>
+                  <figure>
+                    <a href="/">
+                      <img src="./images/img-project03.jpg" alt="반응형 웹페이지 프로젝트-3">
+                    </a>
+                  </figure>
+                  <figcaption>
+                    <h3 class="title">
+                      wigglewiggle <br>
+                      Renewal
+                    </h3>
+                    <ul class="skils">
+                      <li>Scroll Interaction</li>
+                      <li>JavaScript</li>
+                    </ul>
+
+                    <p class="text">
+                      'wigglewiggle'사이트에 어울리는 색감과 역동적인 효과들을 통해 생동감있고 통통튀는 분위기의 웹사이트로 재탄생 시켜보았습니다.
+                    </p>
+                  </figcaption>
+                </li>
+                <li role="tabpanel" aria-labelledby="project-slider-tab-4" class="project-wrapper-contents-item">
+                  <span class="tiem" aria-label="2022년6월 - 2022년 9월">2022.Jul - 2022.Sep</span>
+                  <figure>
+                    <a href="/">
+                      <img src="./images/img-project04.jpg" alt="반응형 웹페이지 프로젝트-4">
+                    </a>
+                  </figure>
+                  <figcaption>
+                    <h3 class="title">
+                      Gyeongbokgung <br>
+                      Renewal
+                    </h3>
+                    <ul class="skils">
+                      <li>Scroll Interaction</li>
+                      <li>JavaScript</li>
+                    </ul>
+
+                    <p class="text">
+                      '경복궁 관리소' 사이트의 전통적인 분위기를 살리고 여러 효과들을 주어 지루한 느낌을 없애며 경복궁의 가치를 최대한 끌어 올려줄 수 있도록 웹사이트 개편을 실시하였습니다.
+                    </p>
+                  </figcaption>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="design" class="design-project" role="tabpanel">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-12">
+          <header>
+            <div class="design-project-title">
+              <h1 class="reveal-up" data-delay="0">PROJECT</h1>
+              <strong>
+                My design story
+              </strong>
+            </div>
+            <div class="dots" aria-hidden>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="text text-fade" data-delay="0.3">
+              <p>포토샵과 일러스트레이터를 활용하여 만든 디자인 작업물을 소개합니다.</p>
+              <p>디자인 툴의 다양한 기능과 창의적인 아이디어를 결합하여 탄생한 작품들을 살펴보세요.</p>
+            </div>
+          </header>
+
+          <div class="design-project-wrapper lg-hidden">
+            <ul class="design-project-list">
+              <li class="design-project-item text-fade" data-delay="0.8">
+                <a href="/">
+                  <div class="image">
+                    <img src="./images/img-project-story01.jpg" alt="디자인 프로젝트-1">
+                  </div>
+                  <div class="text">
+                    <h3>Logo Designs</h3>
+                    <button class="btn-16 lg-hidden" type="button">
+                      <strong>More View</strong>
+                      <i class="ic-right" aria-hidden></i>
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li class="design-project-item text-fade" data-delay="0.8">
+                <a href="/">
+                  <div class="image">
+                    <img src="./images/img-project-story02.jpg" alt="디자인 프로젝트-2">
+                  </div>
+                  <div class="text">
+                    <h3>Banner Designs</h3>
+                    <button class="btn-16 lg-hidden" type="button">
+                      <strong>More View</strong>
+                      <i class="ic-right" aria-hidden></i>
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li class="design-project-item text-fade" data-delay="0.8">
+                <a href="/">
+                  <div class="image">
+                    <img src="./images/img-project-story03.jpg" alt="디자인 프로젝트-3">
+                  </div>
+                  <div class="text">
+                    <h3>Instagram Posts</h3>
+                    <button class="btn-16 lg-hidden" type="button">
+                      <strong>More View</strong>
+                      <i class="ic-right" aria-hidden></i>
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li class="design-project-item text-fade" data-delay="0.8">
+                <a href="/">
+                  <div class="image">
+                    <img src="./images/img-project-story04.jpg" alt="디자인 프로젝트-4">
+                  </div>
+                  <div class="text">
+                    <h3>Poster Designs</h3>
+                    <button class="btn-16 lg-hidden" type="button">
+                      <strong>More View</strong>
+                      <i class="ic-right" aria-hidden></i>
+                    </button>
+                  </div>
+                </a>
+              </li>
+              <li class="design-project-item text-fade" data-delay="0.8">
+                <a href="/">
+                  <div class="image">
+                    <img src="./images/img-project-story05.jpg" alt="디자인 프로젝트-5">
+                  </div>
+                  <div class="text">
+                    <h3>Photoshop Creations</h3>
+                    <button class="btn-16 lg-hidden" type="button">
+                      <strong>More View</strong>
+                      <i class="ic-right" aria-hidden></i>
+                    </button>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 lg-only"></div>
+        <div class="col-lg-3 lg-only">
+          <div class="design-project-wrapper is-left">
+            <ul class="design-project-list">
+              <li class="design-project-item reveal-up" data-delay="0.3">
+                <a href="/">
+                  <div class="image">
+                    <img src="./images/img-project-story01.jpg" alt="디자인 프로젝트-1">
+                  </div>
+                  <div class="text">
+                    <h3>Logo designs</h3>
+                    <button class="btn-16 lg-hidden" type="button">
+                      <strong>More View</strong>
+                      <i class="ic-right" aria-hidden></i>
+                    </button>
+                    <p>
+                      브랜드가 내포하는 이미지와 방향성을 반영하여, 사람들에게 강력한 인상을 전달할 수 있는 로고를 디자인하였습니다.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="design-project-item reveal-up" data-delay="0.3">
+                <a href="/">
+                  <div class="image">
+                    <img src="./images/img-project-story03.jpg" alt="디자인 프로젝트-3">
+                  </div>
+                  <div class="text">
+                    <h3>Instagram Posts</h3>
+                    <button class="btn-16 lg-hidden" type="button">
+                      <strong>More View</strong>
+                      <i class="ic-right" aria-hidden></i>
+                    </button>
+                    <p>‘Instagram’에 올리는 스토리나 게시물들을 제작하는 과정에서 다양한 아이디어와 창의적인 디자인을 활용하여 각각의 게시물에 맞는 콘텐츠들을
+                      만들었습니다.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="design-project-item reveal-up" data-delay="0.3">
+                <a href="/">
+                  <div class="image">
+                    <img src="./images/img-project-story05.jpg" alt="디자인 프로젝트-5">
+                  </div>
+                  <div class="text">
+                    <h3>Photoshop Creations</h3>
+                    <button class="btn-16 lg-hidden" type="button">
+                      <strong>More View</strong>
+                      <i class="ic-right" aria-hidden></i>
+                    </button>
+                    <p>포토샵을 활용하여 창의적인 아이디어로 다채로운 이미지를 제작해 보았습니다.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 lg-only"></div>
+        <div class="col-lg-3 lg-only">
+          <div class="design-project-wrapper is-right">
+            <ul class="design-project-list">
+              <li class="design-project-item reveal-up" data-delay="0.4">
+                <a href="/">
+                  <div class="image">
+                    <img src="./images/img-project-story02.jpg" alt="디자인 프로젝트-2">
+                  </div>
+                  <div class="text">
+                    <h3>Banner designs</h3>
+                    <button class="btn-16 lg-hidden" type="button">
+                      <strong>More View</strong>
+                      <i class="ic-right" aria-hidden></i>
+                    </button>
+                    <p>다양한 상황과 분위기에 맞게 사람들의 눈길을 끌고 관심을 사로잡는 디자인을 배너에 담아냈습니다.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="design-project-item reveal-up" data-delay="0.4">
+                <a href="/">
+                  <div class="image">
+                    <img src="./images/img-project-story04.jpg" alt="디자인 프로젝트-4">
+                  </div>
+                  <div class="text">
+                    <h3>Poster designs</h3>
+                    <button class="btn-16 lg-hidden" type="button">
+                      <strong>More View</strong>
+                      <i class="ic-right" aria-hidden></i>
+                    </button>
+                    <p>새로운 시선과 독창적인 디자인으로 포스터를 구상했습니다.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 lg-only"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="contact" role="tabpanel">
+    <div class="contact-title">
+      <h1>Contact</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-12 col-lg-5">
+          <div class="contact-content text-fade-left" data-delay="0.3">
+            <div class="text">
+              <h3>Thank you for reviewing my portfolio ♥︎</h3>
+              <p>저의 포트폴리오를 봐주셔서 감사합니다.</p>
+              <p>아직은 부족한 부분들을 새로운 경험과 끊임없는 도전을 통해 채워나가고 있는 중입니다.</p>
+              <p>지금보다 더 나은 웹 경험을 만들기 위해 더 많은 도전을 통해 성장하고자 합니다.</p>
+              <p>궁금한 부분이 있으시면 이메일을 통해 언제든 연락주세요:)</p>
+            </div>
+
+            <button class="btn-16 lg-hidden" type="button">
+              <strong>Send Email</strong>
+              <i class="ic-right" aria-hidden></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+        <div class="col-lg-5">
+          <div class="lg-only contact-form text-fade-right" data-delay="0.8">
+            <div class="contact-form-wrapper">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" name="your-name">
+              </div>
+              <div onsubmit="check();">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="your-email">
+              </div>
+              <div>
+                <label for="title">Title</label>
+                <input id="title" type="text" name="your-subject">
+              </div>
+              <div class="textarea">
+                <label for="contents">Contents</label>
+                <textarea id="contents" name="your-message"></textarea>
+              </div>
+              <div class="button">
+                <button class="btn-18" type="button">
+                  <strong>Send</strong>
+                  <i class="ic-right" aria-hidden></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="global-footer" role="tabpanel">
     <div class="container">
       <div class="row">
         <div class="col-sm-4 col-md-12">
@@ -74,13 +539,15 @@
               </address>
             </li>
             <li class="global-footer-item">
-              <button type="button">
+              <button type="button" aria-label="아래로 스크롤">
                 Scroll Down
-                <i class="ic-right"></i>
+                <i class="ic-right up" aria-hidden></i>
               </button>
             </li>
             <li class="global-footer-item text-right">
-              February 2024
+              <time datetime="2024-02">
+                February 2024
+              </time>
             </li>
           </ul>
         </div>
@@ -130,6 +597,29 @@
   </aside>
 
   <div class="overlay" aria-hidden></div>
+
+  <aside class="loading">
+    <img class="loading_img" src="./images/top_logo.png" alt="로딩중..">
+  </aside>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="./js/project-slide.js"></script>
+  <script src="./js/text-reveal-up.js"></script>
+  <script src="./js/text-fade.js"></script>
+  <script src="./js/text-position.js"></script>
+  <script src="./js/about-me.js"></script>
+  <script src="./js/contact.js"></script>
+  <script src="./js/sidebar.js"></script>
+  <script src="./js/email.js"></script>
+  <script src="./js/loading.js"></script>
+
 </body>
 
 </html>
