@@ -6,6 +6,7 @@
       color: $white;
       font-family: $font-point;
       font-size: clamp(12vw, 18vw, 80px);
+      text-shadow: -1px -1px 1px $secondary;
       line-height: 1;
       white-space: nowrap;
     }
@@ -15,6 +16,7 @@
       font-family: $font-point;
       position: relative;
       top: -0.8em;
+      display: inline-block;
     }
   }
 

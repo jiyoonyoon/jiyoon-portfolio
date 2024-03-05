@@ -31,7 +31,7 @@
     color: $black;
     font-family: $font-point;
     font-size: clamp(12vw, 18vw, 80px);
-    line-height: 1.8;
+    line-height: 1.4;
     white-space: nowrap;
 
     &:nth-child(2n) {
@@ -62,8 +62,7 @@
       }
     }
     &-title-item {
-      font-size: clamp(10vw, 16vw, 80px);
-      line-height: 1.6;
+      font-size: clamp(9vw, 16vw, 80px);
     }
   }
 
@@ -89,7 +88,6 @@
 
     &-title-item {
       font-size: clamp(7vw, 9vw, 80px);
-      line-height: 1.4;
     }
   }
 }

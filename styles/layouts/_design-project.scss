@@ -4,6 +4,7 @@
   height: auto;
   width: 100%;
   padding-bottom: 120px;
+  z-index: $design-project-level;
 
   &-title {
     text-align: center;
@@ -14,6 +15,7 @@
       color: $white;
       font-family: $font-point;
       font-size: clamp(12vw, 18vw, 80px);
+      text-shadow: -1px 1px 1px $secondary;
       white-space: nowrap;
       line-height: 1;
     }

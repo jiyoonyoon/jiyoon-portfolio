@@ -24,11 +24,11 @@
   }
 
   @include responsive(D) {
-    padding-top: 120px;
+    padding-top: 80px;
     margin-bottom: 250px;
 
     &::before {
-      height: 381px;
+      height: 340px;
     }
   }
 }

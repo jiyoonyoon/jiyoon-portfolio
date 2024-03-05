@@ -39,10 +39,13 @@
         @include text-style(24, $primary);
         display: block;
         transition: color 200ms ease-in-out;
+        font-weight: 500;
       }
 
-      &:active button {
-        color: $blue;
+      &.is-active {
+        button {
+          color: $blue;
+        }
       }
     }
   }
