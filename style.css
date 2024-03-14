@@ -409,7 +409,7 @@ address {
 .btn-18, .btn-16 {
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   height: 46px;
   padding: 0 6px;
   position: relative; }
@@ -438,6 +438,9 @@ address {
   .btn-18:hover i, .btn-16:hover i {
     color: #0a74cd; }
 
+.button-wrapper {
+  display: inline-block; }
+
 .btn-18 strong {
   font-size: 18px;
   letter-spacing: -0.01em;
@@ -447,13 +450,14 @@ address {
 .btn-18 i {
   font-size: 26px; }
 
-.btn-16 {
+.btn-16 strong {
   font-size: 16px;
   letter-spacing: -0.01em;
   line-height: 24px;
   color: #3f4150; }
-  .btn-16 i {
-    font-size: 24px; }
+
+.btn-16 i {
+  font-size: 24px; }
 
 i {
   font-family: 'icon' !important;
@@ -484,7 +488,8 @@ i {
       display: block;
       height: auto;
       object-fit: cover;
-      width: 100%; }
+      width: 100%;
+      pointer-events: none; }
   .main-visual-title-list {
     left: 50%;
     position: absolute;
@@ -844,7 +849,7 @@ i {
     padding-bottom: 60px; }
     .design-project-wrapper .design-project-item:last-child {
       padding-bottom: 0px; }
-    .design-project-wrapper .design-project-item a {
+    .design-project-wrapper .design-project-item .design-project-content {
       display: block;
       width: 75%;
       max-width: 520px;
@@ -852,7 +857,8 @@ i {
     .design-project-wrapper .design-project-item .image {
       border-radius: 6px;
       overflow: hidden;
-      box-shadow: 3px 3px 15px #e0e2e7; }
+      box-shadow: 3px 3px 15px #e0e2e7;
+      pointer-events: none; }
       .design-project-wrapper .design-project-item .image img {
         display: block;
         width: 100%;
@@ -870,7 +876,7 @@ i {
         font-weight: 600; }
     .design-project-wrapper .design-project-item:nth-child(2n-1) .text {
       left: 18px; }
-    .design-project-wrapper .design-project-item:nth-child(2n) a {
+    .design-project-wrapper .design-project-item:nth-child(2n) .design-project-content {
       float: right; }
     .design-project-wrapper .design-project-item:nth-child(2n) .text {
       right: 18px;
@@ -885,11 +891,15 @@ i {
       .design-project-wrapper .design-project-item {
         padding-bottom: 120px; }
         .design-project-wrapper .design-project-item a {
+          display: block;
+          width: 75%;
           width: 100%;
-          max-width: 100%; }
+          max-width: 100%;
+          position: relative; }
           .design-project-wrapper .design-project-item a:hover .image img {
             transform: scale(1.1); }
         .design-project-wrapper .design-project-item .image img {
+          pointer-events: auto;
           transition: transform 300ms ease-in-out;
           opacity: 1; }
         .design-project-wrapper .design-project-item .text {
@@ -1274,8 +1284,7 @@ i {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      font-weight: 500;
-      cursor: default; }
+      font-weight: 500; }
       .global-footer-item button .ic-right {
         display: inline-block;
         font-size: 46px;
@@ -1512,7 +1521,11 @@ i {
   body {
     cursor: none !important; }
     body a,
-    body button {
+    body button,
+    body input,
+    body label,
+    body select,
+    body textarea {
       cursor: none; }
   .cursor {
     position: fixed;

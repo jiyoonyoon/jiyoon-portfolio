@@ -1,5 +1,5 @@
 %btn-base {
-  @include flexbox;
+  @include flexbox(start);
   height: 46px;
   padding: 0 6px;
   position: relative;
@@ -43,6 +43,10 @@
   }
 }
 
+.button-wrapper {
+  display: inline-block;
+}
+
 .btn-18 {
   @extend %btn-base;
 
@@ -57,7 +61,10 @@
 
 .btn-16 {
   @extend %btn-base;
-  @include text-style(16, $primary);
+
+  strong {
+    @include text-style(16, $primary);
+  }
 
   i {
     font-size: 24px;

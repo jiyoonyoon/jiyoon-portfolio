@@ -3,7 +3,11 @@
     cursor: none !important;
 
     a,
-    button {
+    button,
+    input,
+    label,
+    select,
+    textarea {
       cursor: none;
     }
   }

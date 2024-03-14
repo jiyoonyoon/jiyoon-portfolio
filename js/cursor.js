@@ -2,7 +2,7 @@ let mouseCursor = document.querySelector(".cursor");
 const projectItem = document.querySelectorAll(".project-wrapper-contents-item")
 const designItem = document.querySelectorAll(".design-project-item.reveal-up .image")
 const gnbSideBar = document.querySelector(".gnb-right")
-const buttons = document.querySelectorAll("button.btn-18")
+const buttons = document.querySelectorAll(".btn-18, a.btn-16")
 
 const inputs = document.querySelectorAll('.contact-form-wrapper input')
 const textarea = document.querySelector('.contact-form-wrapper textarea')

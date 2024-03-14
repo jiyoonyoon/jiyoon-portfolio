@@ -68,9 +68,23 @@ function scrollToButtonPanel() {
 
 }
 
-sidebarButtonList.forEach((button) => {
+sidebarButtonList.forEach((button, index) => {
   button.addEventListener('click', activeButton)
-  button.addEventListener('click', scrollToButtonPanel)
+  button.addEventListener('click', function (event) {
+    if (index === 3) {
+      const contectPanelId = this.parentNode.getAttribute('aria-labelledby');
+      const contectPanel = document.querySelector('#' + contectPanelId);
+
+      const contectScrollAmount = contectPanel.getBoundingClientRect().top;
+
+      window.scrollBy({
+        top: contectScrollAmount,
+        behavior: 'smooth'
+      });
+    } else {
+      scrollToButtonPanel.call(this);
+    }
+  })
 })
 
 const buttonPanelIdList = [
